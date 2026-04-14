@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELTA - Inteligência em Engenharia e Construção</title>
+    <meta name="description" content="DELTA: Líder em soluções de alto padrão para reformas residenciais e construções comerciais em São Paulo.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Logo2.png">
+    <!-- Fonts e Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <img src="Logo2.png" alt="DELTA Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">A Delta</a></li>
+                <li><a href="#atuacao">Especialidades</a></li>
+                <li><a href="#locais">São Paulo</a></li>
+                <li><a href="#contato" class="cta-button-nav">Solicitar Orçamento</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i data-lucide="menu"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle reveal">ENGENHARIA DE ALTO PADRÃO</span>
+                    <h1 class="reveal">Precisão em <span>Cada</span> Detalhe.</h1>
+                    <p class="reveal">A DELTA une tecnologia e compromisso para entregar obras que transcendem expectativas. Do residencial de luxo ao comercial de alta performance.</p>
+                    <div class="hero-btns reveal">
+                        <a href="#atuacao" class="btn-premium solid">Nossas Áreas</a>
+                        <a href="https://wa.me/5511982501225" target="_blank" class="btn-premium outline">
+                             Assessoria Imediata
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="atuacao" class="services">
+            <div class="container">
+                <span class="section-label">O QUE FAZEMOS</span>
+                <div class="section-header">
+                    <h2 class="reveal">Segmentos de Atuação</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal">
+                        <span class="card-num">01</span>
+                        <div class="card-icon"><i data-lucide="home"></i></div>
+                        <h3>Reformas Residenciais</h3>
+                        <p>Transformação de espaços com foco no acabamento fino e na valorização patrimonial. Segurança em cada etapa da sua nova moradia.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <span class="card-num">02</span>
+                        <div class="card-icon"><i data-lucide="building-2"></i></div>
+                        <h3>Construções Comerciais</h3>
+                        <p>Infraestrutura robusta para negócios de sucesso. Execução rápida e eficiente, minimizando o tempo de retorno sobre o investimento.</p>
+                    </div>
+                    <div class="service-card reveal">
+                        <span class="card-num">03</span>
+                        <div class="card-icon"><i data-lucide="shield-check"></i></div>
+                        <h3>Manutenções Críticas</h3>
+                        <p>Suporte técnico especializado para condomínios e empresas. Prevenção e correção com o mais alto rigor de qualidade técnica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section id="locais" class="locations">
+            <div class="container">
+                <div class="location-wrapper">
+                    <div class="location-content reveal">
+                        <span class="section-label" style="text-align: left;">ONDE ESTAMOS</span>
+                        <h2>Presença em Jundiaí e Região</h2>
+                        <p>Atuamos nos principais centros urbanos e condomínios da capital e região metropolitana, garantindo logística impecável.</p>
+                        <ul class="location-list">
+                            <li>Jundiaí (Centro) <span>Atendido</span></li>
+                            <li>Vetor Oeste e Leste <span>Atendido</span></li>
+                            <li>Regiões Metropolitanas <span>Atendido</span></li>
+                        </ul>
+                    </div>
+                    <div class="location-img reveal" style="background-image: url('mapa-jundiai.png'); background-size: contain; background-repeat: no-repeat; background-position: center; border: none;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="contact">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <div class="contact-info-panel">
+                        <span class="section-label" style="color: white; opacity: 0.6; text-align: left;">CONTATO</span>
+                        <h2>Fale com nossos especialistas</h2>
+                        <p style="margin-bottom: 40px; opacity: 0.8;">Estamos prontos para analisar seu projeto e oferecer a melhor solução em engenharia.</p>
+                        <div class="contact-methods">
+                            <p><strong>TEL:</strong> (11) 98250-1225</p>
+                            <p><strong>MAIL:</strong> amancio.julio6@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-form-panel">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label>Nome Completo</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>E-mail Corporativo</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Assunto do Projeto</label>
+                                <textarea rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-premium solid" style="width: 100%;">Enviar Solicitação</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <img src="Logo2.png" alt="DELTA Logo" class="footer-logo">
+            </div>
+            <div class="social-links">
+                <a href="#"><i data-lucide="instagram"></i></a>
+                <a href="#"><i data-lucide="linkedin"></i></a>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-muted);">&copy; 2024 DELTA Inteligência em Construção. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
