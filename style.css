@@ -493,6 +493,21 @@ footer .logo {
     .location-img {
         height: 300px;
     }
+
+    /* Correção da Seção de Contato que quebrava no mobile */
+    .contact {
+        padding: 80px 0;
+    }
+
+    .contact-info-panel, 
+    .contact-form-panel {
+        padding: 50px 30px;
+    }
+
+    .contact-info-panel h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 480px) {
