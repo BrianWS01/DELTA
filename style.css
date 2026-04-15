@@ -501,12 +501,36 @@ footer .logo {
 
     .contact-info-panel, 
     .contact-form-panel {
-        padding: 50px 30px;
+        padding: 40px 20px;
     }
 
     .contact-info-panel h2 {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+        line-height: 1.2;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .contact-methods p {
+        word-break: break-all;
+        font-size: 0.9rem;
+    }
+
+    .contact-card {
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-info-panel h2 {
+        font-size: 1.4rem;
+    }
+    
+    .contact-info-panel, 
+    .contact-form-panel {
+        padding: 35px 15px;
     }
 }
 
