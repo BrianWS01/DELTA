@@ -64,14 +64,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
+            
+            // Capturar dados
+            const name = document.getElementById('contact-name').value;
+            const email = document.getElementById('contact-email').value;
+            const subject = document.getElementById('contact-subject').value;
+            
             const submitBtn = contactForm.querySelector('button');
             const originalText = submitBtn.innerText;
             
-            submitBtn.innerText = 'PROCESSANDO...';
+            submitBtn.innerText = 'REDIRECIONANDO...';
             submitBtn.disabled = true;
             submitBtn.style.opacity = '0.7';
 
+            // Criar mensagem para o WhatsApp
+            const message = `Olá, meu nome é ${name}.%0A%0A*E-mail:* ${email}%0A*Assunto:* ${subject}`;
+            const whatsappUrl = `https://wa.me/5511982501225?text=${message}`;
+
             setTimeout(() => {
+                window.open(whatsappUrl, '_blank');
+                
                 submitBtn.innerText = 'SOLICITAÇÃO ENVIADA';
                 submitBtn.style.background = '#28a745';
                 submitBtn.style.opacity = '1';
@@ -82,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     submitBtn.style.background = '';
                     submitBtn.disabled = false;
                 }, 4000);
-            }, 2000);
+            }, 1000);
         });
     }
 });

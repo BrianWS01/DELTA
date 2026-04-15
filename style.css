@@ -3,7 +3,8 @@
 :root {
     --bg-deep: #050505;
     --bg-elevated: #151515;
-    --primary-red: #C51B1D; /* Extracted from Logo */
+    --primary-red: #C51B1D;
+    /* Extracted from Logo */
     --accent-red: #D42023;
     --text-main: #FFFFFF;
     --text-muted: #999999;
@@ -22,6 +23,10 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    scroll-margin-top: 100px;
+}
+
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-deep);
@@ -30,7 +35,10 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, .logo-text {
+h1,
+h2,
+h3,
+.logo-text {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -67,9 +75,10 @@ nav {
 }
 
 .logo img {
-    height: 50px;
+    height: 70px;
     width: auto;
-    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.4)); /* Glow to make black/red logo visible */
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.4));
+    /* Glow to make black/red logo visible */
     transition: var(--transition);
 }
 
@@ -126,9 +135,9 @@ nav {
     right: 0;
     width: 60%;
     height: 100%;
-    background: linear-gradient(to right, var(--bg-deep) 10%, transparent 100%), 
-                linear-gradient(to top, var(--bg-deep) 0%, transparent 40%),
-                url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070') no-repeat center center/cover;
+    background: linear-gradient(to right, var(--bg-deep) 10%, transparent 100%),
+        linear-gradient(to top, var(--bg-deep) 0%, transparent 40%),
+        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070') no-repeat center center/cover;
     z-index: 1;
 }
 
@@ -173,7 +182,8 @@ nav {
     gap: 25px;
 }
 
-.btn-premium.solid, .cta-button-nav {
+.btn-premium.solid,
+.cta-button-nav {
     background: var(--primary-red);
     color: white;
     box-shadow: 0 4px 15px rgba(197, 27, 29, 0.3);
@@ -200,7 +210,7 @@ nav {
 
 .btn-premium:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* --- Services --- */
@@ -373,7 +383,7 @@ nav {
     color: var(--text-muted);
 }
 
-.form-group input, 
+.form-group input,
 .form-group textarea {
     width: 100%;
     background: transparent;
@@ -387,7 +397,7 @@ nav {
     transition: var(--transition);
 }
 
-.form-group input:focus, 
+.form-group input:focus,
 .form-group textarea:focus {
     border-color: var(--primary-red);
 }
@@ -404,9 +414,9 @@ footer .logo {
 }
 
 .footer-logo {
-    height: 40px;
+    height: 120px;
     width: auto;
-    opacity: 0.6;
+    opacity: 0.85;
     transition: var(--transition);
 }
 
@@ -445,16 +455,36 @@ footer .logo {
 
 /* --- Mobile Responsiveness --- */
 @media (max-width: 1024px) {
-    .services-grid { grid-template-columns: 1fr 1fr; }
-    .hero h1 { font-size: 3.5rem; }
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
 }
 
 @media (max-width: 768px) {
-    .services-grid { grid-template-columns: 1fr; }
-    .hero h1 { font-size: 2.8rem; }
-    .location-wrapper { flex-direction: column; gap: 50px; }
-    .contact-card { grid-template-columns: 1fr; }
-    .container { padding: 0 25px; }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .location-wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contact-card {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 0 25px;
+    }
 
     .menu-toggle {
         display: block;
@@ -499,7 +529,7 @@ footer .logo {
         padding: 80px 0;
     }
 
-    .contact-info-panel, 
+    .contact-info-panel,
     .contact-form-panel {
         padding: 40px 20px;
     }
@@ -527,8 +557,8 @@ footer .logo {
     .contact-info-panel h2 {
         font-size: 1.4rem;
     }
-    
-    .contact-info-panel, 
+
+    .contact-info-panel,
     .contact-form-panel {
         padding: 35px 15px;
     }
