@@ -109,6 +109,14 @@ nav {
     color: var(--primary-red);
 }
 
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    color: var(--text-main);
+    font-size: 1.8rem;
+    transition: var(--transition);
+}
+
 .cta-button-nav {
     background: var(--primary-red);
     padding: 12px 25px;
@@ -500,9 +508,18 @@ footer .logo {
         width: 80%;
         height: 100vh;
         background: var(--bg-deep);
-        padding: 100px 40px;
+        padding: 120px 40px;
         transition: var(--transition);
         border-left: 1px solid var(--glass-border);
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .nav-links .cta-button-nav {
+        white-space: nowrap;
+        width: auto;
+        padding: 15px 30px;
+        margin-top: 10px;
     }
 
     .nav-links.active {
